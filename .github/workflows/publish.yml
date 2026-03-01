@@ -60,7 +60,9 @@ jobs:
           for folder in ${{ steps.changed.outputs.folders }}; do
             echo "──────────────────────────────────────"
             echo "Publishing: $folder"
-            if clawhub publish "$folder"; then
+            # Read version from SKILL.md frontmatter
+            version=$(grep '^version:' "$folder/SKILL.md" | head -1 | sed 's/version: *//;s/"//g;s/ *$//')
+            if clawhub publish "$folder" --version "$version"; then
               echo "✅ $folder published"
             else
               echo "❌ $folder failed"
