@@ -47,10 +47,13 @@ jobs:
           echo "Skill folders to publish: $folders"
           echo "folders=$folders" >> "$GITHUB_OUTPUT"
 
-      - name: Publish changed skills
-        if: steps.changed.outputs.folders != ''
+      - name: Authenticate with ClawHub
         env:
           CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
+        run: clawhub login --token "$CLAWHUB_TOKEN"
+
+      - name: Publish changed skills
+        if: steps.changed.outputs.folders != ''
         run: |
           failed=()
 
