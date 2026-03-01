@@ -24,8 +24,13 @@ jobs:
       - name: Detect changed SKILL.md files
         id: changed
         run: |
-          # Get list of changed SKILL.md files in openclaw/
-          changed=$(git diff --name-only HEAD~1 HEAD -- 'openclaw/**/SKILL.md')
+          # On the initial commit HEAD~1 doesn't exist — publish all skills instead
+          if git rev-parse HEAD~1 > /dev/null 2>&1; then
+            changed=$(git diff --name-only HEAD~1 HEAD -- 'openclaw/**/SKILL.md')
+          else
+            echo "Initial commit detected — publishing all SKILL.md files"
+            changed=$(git diff-tree --no-commit-id -r --name-only HEAD -- 'openclaw/**/SKILL.md')
+          fi
 
           if [ -z "$changed" ]; then
             echo "No SKILL.md files changed."
