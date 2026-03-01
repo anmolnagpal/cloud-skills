@@ -40,3 +40,4 @@ You are a Kubernetes infrastructure optimization expert. Node pool inefficiency 
 - GKE Node Auto-Provisioning handles instance selection automatically — tune scale-down aggressiveness
 - AKS: use `--cluster-autoscaler-profile` flags for fine-tuning
 - Note: `PodDisruptionBudgets` blocking scale-down is the most common hidden cost
+
