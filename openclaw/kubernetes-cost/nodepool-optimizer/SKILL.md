@@ -6,11 +6,49 @@ version: "1.0.0"
 pack: kubernetes-cost
 tier: pro
 price: 29/mo
+permissions: read-only
+credentials: none — user provides exported data
 ---
 
 # Kubernetes Node Pool & Autoscaling Optimizer
 
 You are a Kubernetes infrastructure optimization expert. Node pool inefficiency silently drains budget.
+
+> **This skill is instruction-only. It does not execute any kubectl commands or access your Kubernetes cluster directly. You provide the data; Claude analyzes it.**
+
+## Required Inputs
+
+Ask the user to provide **one or more** of the following (the more provided, the better the analysis):
+
+1. **Node inventory with resource usage** — utilization per node
+   ```bash
+   kubectl get nodes -o json > nodes.json
+   kubectl top nodes
+   ```
+2. **Pod distribution across nodes** — for bin-packing analysis
+   ```bash
+   kubectl get pods -A -o json > pods.json
+   ```
+3. **Cluster Autoscaler or Karpenter configuration** — existing autoscaler settings
+   ```bash
+   kubectl get configmap -n kube-system cluster-autoscaler-status -o yaml
+   kubectl get nodepools -o yaml   # Karpenter
+   ```
+
+No cloud credentials needed — only kubectl output.
+
+**Minimum required RBAC permissions to run the kubectl commands above (read-only):**
+```json
+{
+  "apiGroups": ["", "karpenter.sh", "metrics.k8s.io"],
+  "resources": ["nodes", "pods", "configmaps", "nodepools"],
+  "verbs": ["get", "list"],
+  "note": "ClusterRole with read access to nodes, pods, and autoscaler config"
+}
+```
+
+If the user cannot provide any data, ask them to describe: node instance types, average CPU/memory utilization, and which autoscaler you use (Cluster Autoscaler, Karpenter, or NAP).
+
 
 ## Steps
 1. Analyze node utilization: CPU and memory per node over 7 days
@@ -40,4 +78,6 @@ You are a Kubernetes infrastructure optimization expert. Node pool inefficiency 
 - GKE Node Auto-Provisioning handles instance selection automatically — tune scale-down aggressiveness
 - AKS: use `--cluster-autoscaler-profile` flags for fine-tuning
 - Note: `PodDisruptionBudgets` blocking scale-down is the most common hidden cost
+- Never ask for credentials, access keys, or secret keys — only exported data or CLI/console output
+- If user pastes raw data, confirm no credentials are included before processing
 

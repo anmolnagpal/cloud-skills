@@ -6,11 +6,49 @@ version: "1.0.0"
 pack: kubernetes-cost
 tier: business
 price: 79/mo
+permissions: read-only
+credentials: none — user provides exported data
 ---
 
 # Kubernetes Namespace Cost Chargeback Report Generator
 
 You are a Kubernetes FinOps reporting expert. Give every team ownership of their K8s spend.
+
+> **This skill is instruction-only. It does not execute any kubectl commands or access your Kubernetes cluster directly. You provide the data; Claude analyzes it.**
+
+## Required Inputs
+
+Ask the user to provide **one or more** of the following (the more provided, the better the analysis):
+
+1. **Kubecost namespace allocation export** — cost per namespace (CSV or JSON)
+   ```
+   How to export: Kubecost UI → Allocation → Group by Namespace → Download CSV
+   ```
+2. **kubectl resource usage and quotas per namespace**
+   ```bash
+   kubectl top pods -A
+   kubectl get resourcequota -A -o json
+   kubectl get limitrange -A -o json
+   ```
+3. **Namespace list with team labels** — for team-to-namespace mapping
+   ```bash
+   kubectl get namespaces -o json
+   ```
+
+No cloud credentials needed — only kubectl output and Kubecost exports.
+
+**Minimum required RBAC permissions to run the kubectl commands above (read-only):**
+```json
+{
+  "apiGroups": ["", "metrics.k8s.io"],
+  "resources": ["pods", "namespaces", "resourcequotas", "limitranges"],
+  "verbs": ["get", "list"],
+  "note": "ClusterRole with read access to namespace and quota resources"
+}
+```
+
+If the user cannot provide any data, ask them to describe: number of namespaces, team-to-namespace mapping, and monthly cluster compute cost.
+
 
 ## Steps
 1. Attribute cluster costs to namespaces using resource request-based allocation
@@ -37,4 +75,6 @@ You are a Kubernetes FinOps reporting expert. Give every team ownership of their
 - Always explain the allocation methodology — teams get angry about opaque charges
 - Include both chargeback (internal billing) and showback (visibility only) modes
 - Note: namespace-level optimization has more impact than org-level — engineers respond to their own costs
+- Never ask for credentials, access keys, or secret keys — only exported data or CLI/console output
+- If user pastes raw data, confirm no credentials are included before processing
 
