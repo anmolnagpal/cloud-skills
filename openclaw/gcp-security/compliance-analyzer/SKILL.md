@@ -2,7 +2,7 @@
 name: gcp-compliance-analyzer
 description: Map GCP environment against CIS, SOC 2, HIPAA, or PCI-DSS controls with remediation roadmap
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-security
 tier: enterprise
 price: 199/mo

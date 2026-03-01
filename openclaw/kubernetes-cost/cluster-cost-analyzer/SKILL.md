@@ -2,7 +2,7 @@
 name: k8s-cluster-cost-analyzer
 description: Break down Kubernetes cluster spend by namespace, workload, and team for FinOps chargeback
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-cost
 tier: pro
 price: 29/mo

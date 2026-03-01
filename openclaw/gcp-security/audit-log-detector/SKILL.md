@@ -2,7 +2,7 @@
 name: gcp-audit-log-detector
 description: Analyze GCP Cloud Audit Logs for suspicious patterns, unauthorized changes, and attack indicators
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-security
 tier: security
 price: 49/mo

@@ -2,7 +2,7 @@
 name: k8s-rbac-auditor
 description: Audit Kubernetes RBAC roles, bindings, and service accounts for over-privilege and dangerous permissions
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-security
 tier: security
 price: 49/mo

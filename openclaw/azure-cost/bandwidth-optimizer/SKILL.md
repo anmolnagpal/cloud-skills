@@ -2,7 +2,7 @@
 name: azure-bandwidth-optimizer
 description: Identify and reduce Azure bandwidth and egress costs — often the most invisible Azure cost driver
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-cost
 tier: business
 price: 79/mo

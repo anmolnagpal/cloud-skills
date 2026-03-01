@@ -2,7 +2,7 @@
 name: k8s-finops-report
 description: Generate executive-ready monthly Kubernetes FinOps reports across all clusters and teams
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-cost
 tier: business
 price: 79/mo

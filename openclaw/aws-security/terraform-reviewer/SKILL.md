@@ -2,7 +2,7 @@
 name: aws-terraform-security-reviewer
 description: Review Terraform plans and HCL files for AWS security misconfigurations before deployment
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-security
 tier: security
 price: 49/mo

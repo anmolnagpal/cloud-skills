@@ -2,7 +2,7 @@
 name: gcp-iam-policy-auditor
 description: Audit GCP IAM bindings, service accounts, and custom roles for over-privilege and dangerous patterns
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-security
 tier: security
 price: 49/mo

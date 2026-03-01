@@ -2,7 +2,7 @@
 name: aws-anomaly-explainer
 description: Diagnose AWS cost anomalies and explain root cause in plain English when spend spikes unexpectedly
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-cost
 tier: pro
 price: 29/mo

@@ -2,7 +2,7 @@
 name: gcp-idle-resource-detector
 description: Detect GCP idle and zombie resources consuming cost with zero meaningful utilization
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-cost
 tier: pro
 price: 29/mo

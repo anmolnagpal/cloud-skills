@@ -2,7 +2,7 @@
 name: k8s-image-scanner
 description: Audit container images running in the cluster for CVEs, outdated base images, and supply chain risks
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-security
 tier: security
 price: 49/mo

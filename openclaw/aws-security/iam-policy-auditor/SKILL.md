@@ -2,7 +2,7 @@
 name: aws-iam-policy-auditor
 description: Audit AWS IAM policies and roles for over-privilege, wildcard permissions, and least-privilege violations
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-security
 tier: security
 price: 49/mo

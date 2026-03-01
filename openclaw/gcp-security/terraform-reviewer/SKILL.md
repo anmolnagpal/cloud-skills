@@ -2,7 +2,7 @@
 name: gcp-terraform-security-reviewer
 description: Review Terraform google provider and HCL files for GCP security misconfigurations before deployment
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-security
 tier: security
 price: 49/mo

@@ -2,7 +2,7 @@
 name: k8s-namespace-chargeback
 description: Generate monthly Kubernetes namespace-level cost chargeback and showback reports per team
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-cost
 tier: business
 price: 79/mo

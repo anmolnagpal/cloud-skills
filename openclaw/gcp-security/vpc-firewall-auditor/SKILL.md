@@ -2,7 +2,7 @@
 name: gcp-vpc-firewall-auditor
 description: Audit GCP VPC firewall rules and hierarchical policies for dangerous internet exposure
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-security
 tier: security
 price: 49/mo

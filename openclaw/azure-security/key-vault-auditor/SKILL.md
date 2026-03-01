@@ -2,7 +2,7 @@
 name: azure-key-vault-auditor
 description: Audit Azure Key Vault configuration, access policies, and secret hygiene for credential exposure risks
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-security
 tier: security
 price: 49/mo

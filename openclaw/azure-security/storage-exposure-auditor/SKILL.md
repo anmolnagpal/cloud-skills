@@ -2,7 +2,7 @@
 name: azure-storage-exposure-auditor
 description: Identify publicly accessible Azure Storage accounts and misconfigured blob containers
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-security
 tier: security
 price: 49/mo

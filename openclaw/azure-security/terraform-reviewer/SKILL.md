@@ -2,7 +2,7 @@
 name: azure-terraform-security-reviewer
 description: Review Terraform azurerm and Bicep templates for Azure security misconfigurations before deployment
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-security
 tier: security
 price: 49/mo

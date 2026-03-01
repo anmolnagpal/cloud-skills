@@ -2,7 +2,7 @@
 name: k8s-cis-benchmark
 description: Assess Kubernetes cluster against CIS Benchmark (EKS/AKS/GKE variants) with prioritized remediation
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-security
 tier: enterprise
 price: 199/mo

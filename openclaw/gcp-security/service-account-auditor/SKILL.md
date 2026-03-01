@@ -2,7 +2,7 @@
 name: gcp-service-account-auditor
 description: Audit GCP service accounts and keys — the #1 lateral movement vector in GCP environments
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-security
 tier: security
 price: 49/mo

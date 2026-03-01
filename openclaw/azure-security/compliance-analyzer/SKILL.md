@@ -2,7 +2,7 @@
 name: azure-compliance-analyzer
 description: Map Azure environment against CIS, SOC 2, ISO 27001, HIPAA, or PCI-DSS with remediation roadmap
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-security
 tier: enterprise
 price: 199/mo

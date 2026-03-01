@@ -2,7 +2,7 @@
 name: gcp-spend-analyzer
 description: Analyze GCP billing exports to identify top cost drivers, waste, and anomalies across projects
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-cost
 tier: pro
 price: 29/mo

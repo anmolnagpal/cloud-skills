@@ -2,7 +2,7 @@
 name: k8s-pod-security-auditor
 description: Audit Kubernetes pod security configurations for container escape and privilege escalation risks
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-security
 tier: security
 price: 49/mo

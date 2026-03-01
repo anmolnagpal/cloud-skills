@@ -2,7 +2,7 @@
 name: aws-spot-strategy
 description: Design an interruption-resilient EC2 Spot instance strategy with fallback configurations
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-cost
 tier: pro
 price: 29/mo

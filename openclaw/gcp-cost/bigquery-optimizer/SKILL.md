@@ -2,7 +2,7 @@
 name: gcp-bigquery-optimizer
 description: Analyze BigQuery query patterns and storage to dramatically reduce the #1 surprise GCP cost driver
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-cost
 tier: business
 price: 79/mo

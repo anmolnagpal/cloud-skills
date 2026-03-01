@@ -2,7 +2,7 @@
 name: gcp-anomaly-explainer
 description: Diagnose GCP cost anomalies and explain root cause in plain English when Budget Alerts fire
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-cost
 tier: pro
 price: 29/mo

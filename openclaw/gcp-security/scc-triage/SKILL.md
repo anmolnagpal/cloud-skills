@@ -2,7 +2,7 @@
 name: gcp-scc-triage
 description: Process Security Command Center findings and generate a prioritized plain-English remediation plan
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-security
 tier: security
 price: 49/mo

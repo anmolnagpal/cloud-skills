@@ -2,7 +2,7 @@
 name: aws-secrets-scanner
 description: Detect hardcoded secrets, exposed API keys, and credential misconfigurations in IaC and config files
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-security
 tier: security
 price: 49/mo

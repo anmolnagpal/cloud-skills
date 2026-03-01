@@ -2,7 +2,7 @@
 name: aws-data-transfer-optimizer
 description: Identify and reduce AWS data transfer costs — inter-region, cross-AZ, and NAT Gateway charges
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-cost
 tier: business
 price: 79/mo

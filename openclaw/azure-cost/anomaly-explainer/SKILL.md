@@ -2,7 +2,7 @@
 name: azure-anomaly-explainer
 description: Diagnose Azure cost anomalies and explain root cause in plain English when spend spikes
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-cost
 tier: pro
 price: 29/mo

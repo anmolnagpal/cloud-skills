@@ -2,7 +2,7 @@
 name: k8s-secrets-auditor
 description: Audit Kubernetes secret management for credential leakage patterns and etcd encryption gaps
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-security
 tier: security
 price: 49/mo

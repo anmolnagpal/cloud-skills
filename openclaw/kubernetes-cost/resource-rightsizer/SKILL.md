@@ -2,7 +2,7 @@
 name: k8s-resource-rightsizer
 description: Identify over-provisioned pods and recommend optimal resource requests/limits from actual usage
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-cost
 tier: pro
 price: 29/mo

@@ -2,7 +2,7 @@
 name: aws-finops-report
 description: Generate executive-ready monthly AWS FinOps reports with team-level chargeback and savings opportunities
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-cost
 tier: business
 price: 79/mo

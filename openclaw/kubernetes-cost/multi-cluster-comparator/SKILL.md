@@ -2,7 +2,7 @@
 name: k8s-multi-cluster-comparator
 description: Compare true total cost of ownership for the same workload on EKS vs AKS vs GKE
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-cost
 tier: business
 price: 79/mo

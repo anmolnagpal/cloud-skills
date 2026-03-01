@@ -2,7 +2,7 @@
 name: k8s-idle-workload-detector
 description: Find Kubernetes zombie workloads, orphaned resources, and unused PVCs consuming cluster cost
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-cost
 tier: pro
 price: 29/mo

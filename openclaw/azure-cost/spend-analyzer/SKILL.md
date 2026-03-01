@@ -2,7 +2,7 @@
 name: azure-spend-analyzer
 description: Analyze Azure billing exports to identify top cost drivers, waste, and anomalies across subscriptions
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-cost
 tier: pro
 price: 29/mo

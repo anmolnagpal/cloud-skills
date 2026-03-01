@@ -2,7 +2,7 @@
 name: aws-s3-exposure-auditor
 description: Identify publicly accessible S3 buckets, dangerous ACLs, and misconfigured bucket policies
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-security
 tier: security
 price: 49/mo

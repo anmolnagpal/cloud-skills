@@ -2,7 +2,7 @@
 name: k8s-spot-node-strategy
 description: Design interruption-resilient Spot/Preemptible node strategies for Kubernetes workloads (EKS/AKS/GKE)
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-cost
 tier: pro
 price: 29/mo

@@ -2,7 +2,7 @@
 name: azure-devtest-optimizer
 description: Optimize Azure dev/test environment costs with auto-shutdown schedules and Dev/Test pricing enrollment
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-cost
 tier: pro
 price: 29/mo

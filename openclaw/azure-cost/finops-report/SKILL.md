@@ -2,7 +2,7 @@
 name: azure-finops-report
 description: Generate executive-ready monthly Azure FinOps reports with team chargeback and optimization opportunities
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-cost
 tier: business
 price: 79/mo

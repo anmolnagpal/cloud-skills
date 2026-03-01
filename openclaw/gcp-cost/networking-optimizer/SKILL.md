@@ -2,7 +2,7 @@
 name: gcp-networking-optimizer
 description: Identify and reduce GCP networking and egress costs across projects and regions
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-cost
 tier: business
 price: 79/mo

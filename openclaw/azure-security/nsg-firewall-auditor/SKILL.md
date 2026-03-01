@@ -2,7 +2,7 @@
 name: azure-nsg-firewall-auditor
 description: Audit Azure NSG rules and Azure Firewall policies for dangerous internet exposure
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-security
 tier: security
 price: 49/mo

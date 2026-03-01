@@ -2,7 +2,7 @@
 name: k8s-network-policy-auditor
 description: Audit Kubernetes NetworkPolicies for missing segmentation — default open clusters allow lateral movement
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-security
 tier: security
 price: 49/mo

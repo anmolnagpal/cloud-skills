@@ -2,7 +2,7 @@
 name: aws-ri-savings-advisor
 description: Recommend optimal Reserved Instance and Savings Plan portfolio based on AWS usage patterns
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-cost
 tier: pro
 price: 29/mo

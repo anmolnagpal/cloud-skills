@@ -2,7 +2,7 @@
 name: aws-spend-analyzer
 description: Analyze AWS Cost & Usage Reports to identify top cost drivers, waste, and anomalies across all linked accounts
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-cost
 tier: pro
 price: 29/mo

@@ -2,7 +2,7 @@
 name: gcp-cud-advisor
 description: Recommend optimal GCP Committed Use Discount portfolio (spend-based vs resource-based) with risk analysis
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-cost
 tier: pro
 price: 29/mo

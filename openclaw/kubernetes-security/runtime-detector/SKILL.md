@@ -2,7 +2,7 @@
 name: k8s-runtime-detector
 description: Analyze Falco alerts and Kubernetes audit logs to detect active threats and attack patterns in clusters
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-security
 tier: security
 price: 49/mo

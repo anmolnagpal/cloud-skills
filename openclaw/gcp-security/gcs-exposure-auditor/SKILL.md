@@ -2,7 +2,7 @@
 name: gcp-gcs-exposure-auditor
 description: Identify publicly accessible GCS buckets, dangerous ACLs, and misconfigured uniform bucket-level access
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: gcp-security
 tier: security
 price: 49/mo

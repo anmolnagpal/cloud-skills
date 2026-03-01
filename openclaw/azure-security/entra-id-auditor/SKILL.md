@@ -2,7 +2,7 @@
 name: azure-entra-id-auditor
 description: Audit Microsoft Entra ID for over-privileged roles, dangerous access patterns, and identity security gaps
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-security
 tier: security
 price: 49/mo

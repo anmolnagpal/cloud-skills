@@ -2,7 +2,7 @@
 name: azure-reservations-hybrid-advisor
 description: Recommend optimal Azure Reservations and Hybrid Benefit coverage for maximum stacked savings
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-cost
 tier: pro
 price: 29/mo

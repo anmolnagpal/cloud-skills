@@ -2,7 +2,7 @@
 name: aws-tagging-auditor
 description: Audit AWS resource tagging compliance and identify unallocatable spend for FinOps teams
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-cost
 tier: pro
 price: 29/mo

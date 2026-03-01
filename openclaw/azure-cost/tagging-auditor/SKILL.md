@@ -2,7 +2,7 @@
 name: azure-tagging-auditor
 description: Audit Azure resource tagging compliance and identify unallocatable spend
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-cost
 tier: pro
 price: 29/mo

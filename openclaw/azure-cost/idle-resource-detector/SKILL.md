@@ -2,7 +2,7 @@
 name: azure-idle-resource-detector
 description: Detect Azure idle and zombie resources consuming cost with zero meaningful utilization
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-cost
 tier: pro
 price: 29/mo

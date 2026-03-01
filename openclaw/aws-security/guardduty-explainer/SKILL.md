@@ -2,7 +2,7 @@
 name: aws-guardduty-explainer
 description: Translate GuardDuty findings into plain-English incident summaries with actionable response steps
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-security
 tier: security
 price: 49/mo

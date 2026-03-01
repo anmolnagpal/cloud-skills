@@ -2,7 +2,7 @@
 name: aws-compliance-analyzer
 description: Map AWS environment against CIS, SOC 2, HIPAA, or PCI-DSS controls with prioritized remediation
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-security
 tier: enterprise
 price: 199/mo

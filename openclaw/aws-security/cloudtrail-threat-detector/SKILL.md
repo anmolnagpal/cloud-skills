@@ -2,7 +2,7 @@
 name: aws-cloudtrail-threat-detector
 description: Analyze AWS CloudTrail logs for suspicious patterns, unauthorized changes, and MITRE ATT&CK indicators
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: aws-security
 tier: security
 price: 49/mo

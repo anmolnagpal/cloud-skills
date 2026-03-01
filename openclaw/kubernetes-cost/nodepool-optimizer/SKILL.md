@@ -2,7 +2,7 @@
 name: k8s-nodepool-optimizer
 description: Analyze Kubernetes node pool composition and autoscaling config to eliminate idle node waste
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-cost
 tier: pro
 price: 29/mo

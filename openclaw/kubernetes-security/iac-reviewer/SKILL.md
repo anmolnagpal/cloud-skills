@@ -2,7 +2,7 @@
 name: k8s-iac-security-reviewer
 description: Review Terraform EKS/AKS/GKE cluster config and Helm chart values for security misconfigurations
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: kubernetes-security
 tier: security
 price: 49/mo

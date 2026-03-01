@@ -2,7 +2,7 @@
 name: azure-defender-posture-reviewer
 description: Interpret Microsoft Defender for Cloud Secure Score and generate a prioritized remediation roadmap
 tools: claude, bash
-version: 1.0.0
+version: "1.0.0"
 pack: azure-security
 tier: security
 price: 49/mo
